@@ -8,7 +8,7 @@ Summary:	Perl interface to the UNIX system logger
 Summary(pl):	Interfejs Perla do systemowego logera UNIX
 Name:		perl-Unix-Syslog
 Version:	0.99
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
