@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Unix
-%define		pnam	Syslog
+%define	pdir	Unix
+%define	pnam	Syslog
 Summary:	Unix::Syslog - Perl interface to the UNIX system logger
 Summary(pl):	Unix::Syslog - interfejs Perla do uniksowego systemowego programu loguj±cego
 Name:		perl-Unix-Syslog
