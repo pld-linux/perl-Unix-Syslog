@@ -2,7 +2,7 @@
 Summary:	Perl interface to the UNIX system logger
 Summary(pl):	Interfejs Perla do systemowego logera UNIX
 Name:		perl-Unix-Syslog
-Version:	0.94
+Version:	0.95
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%{perl_sitelib}/Syslog
-%{perl_sitelib}/*.pm
+%{perl_sitearch}/Unix/*.pm
+%{perl_sitearch}/auto/Unix/Syslog
 %{_mandir}/man3/*
