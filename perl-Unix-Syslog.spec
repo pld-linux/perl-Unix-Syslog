@@ -1,3 +1,6 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Unix
 %define		pnam	Syslog
@@ -5,7 +8,7 @@ Summary:	Perl interface to the UNIX system logger
 Summary(pl):	Interfejs Perla do systemowego logera UNIX
 Name:		perl-Unix-Syslog
 Version:	0.98
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -15,10 +18,13 @@ Requires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Perl interface to the UNIX system logger.
+Th Unix::Syslog Perl module provides access to the system logger
+available on most UNIX systems via Perl's XSUBs (Perl's C interface).
 
 %description -l pl
-Interfejs Perla do systemowego logera UNIX.
+Modu³ Perla Unix::Syslog umo¿liwia za po¶rednictwem XSUB Perla
+(perlowy interfejs do C) dostêp do wystêpuj±cego w wiêkszosci systemów
+uniksowych rejestratora systemowego.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -26,6 +32,8 @@ Interfejs Perla do systemowego logera UNIX.
 %build
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -41,6 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitearch}/Unix
 %dir %{perl_sitearch}/auto/Unix
 %dir %{perl_sitearch}/auto/Unix/Syslog
+%{perl_sitearch}/auto/Unix/Syslog/autosplit.ix
 %{perl_sitearch}/auto/Unix/Syslog/Syslog.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Unix/Syslog/Syslog.so
 %{_mandir}/man3/*
