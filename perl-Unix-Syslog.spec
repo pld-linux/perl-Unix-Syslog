@@ -6,7 +6,7 @@ Version:	0.97
 Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Unix/Syslog-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Unix/Syslog-%{version}.tar.gz
 BuildRequires:	gcc
 BuildRequires:	rpm-perlprov >= 3.0.3-18
 BuildRequires:	perl >= 5.005_03-14
