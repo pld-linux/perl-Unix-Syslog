@@ -4,8 +4,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Unix
 %define		pnam	Syslog
-Summary:	Perl interface to the UNIX system logger
-Summary(pl):	Interfejs Perla do systemowego logera UNIX
+Summary:	Unix::Syslog - Perl interface to the UNIX system logger
+Summary(pl):	Unix::Syslog - interfejs Perla do uniksowego systemowego programu loguj±cego
 Name:		perl-Unix-Syslog
 Version:	0.99
 Release:	3
@@ -18,7 +18,7 @@ BuildRequires:	perl-devel >= 5.005_03-14
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Th Unix::Syslog Perl module provides access to the system logger
+The Unix::Syslog Perl module provides access to the system logger
 available on most UNIX systems via Perl's XSUBs (Perl's C interface).
 
 %description -l pl
