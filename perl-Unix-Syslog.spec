@@ -24,7 +24,7 @@ available on most UNIX systems via Perl's XSUBs (Perl's C interface).
 
 %description -l pl
 Modu³ Perla Unix::Syslog umo¿liwia za po¶rednictwem XSUB Perla
-(perlowy interfejs do C) dostêp do wystêpuj±cego w wiêkszosci systemów
+(perlowy interfejs do C) dostêp do wystêpuj±cego w wiêkszo¶ci systemów
 uniksowych rejestratora systemowego.
 
 %prep
