@@ -1,0 +1,4 @@
+- adapterized,
+- added full Source url,
+- do not include .packlist file in %%files (we uses rpm as packaging
+  system).
