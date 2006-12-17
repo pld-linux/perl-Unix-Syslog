@@ -8,14 +8,16 @@
 Summary:	Unix::Syslog - Perl interface to the UNIX system logger
 Summary(pl):	Unix::Syslog - interfejs Perla do uniksowego systemowego programu loguj±cego
 Name:		perl-Unix-Syslog
-Version:	0.99
-Release:	5
+Version:	0.100
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0f16c5e4e65cb51df9a0342318b1f221
-BuildRequires:	rpm-perlprov >= 4.1-13
+#Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MH/MHARNISCH/Unix-Syslog-%{version}.tar.gz
+# Source0-md5:	655d2e04a043b3e92d1bb47caf8e8a3b
+URL:		http://search.cpan.org/dist/Unix-Syslog/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-dirs >= 1.0-7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
