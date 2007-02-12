@@ -6,7 +6,7 @@
 %define		pdir	Unix
 %define		pnam	Syslog
 Summary:	Unix::Syslog - Perl interface to the UNIX system logger
-Summary(pl):	Unix::Syslog - interfejs Perla do uniksowego systemowego programu loguj±cego
+Summary(pl.UTF-8):   Unix::Syslog - interfejs Perla do uniksowego systemowego programu logujÄ…cego
 Name:		perl-Unix-Syslog
 Version:	0.100
 Release:	1
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Unix::Syslog Perl module provides access to the system logger
 available on most UNIX systems via Perl's XSUBs (Perl's C interface).
 
-%description -l pl
-Modu³ Perla Unix::Syslog umo¿liwia za po¶rednictwem XSUB Perla
-(perlowy interfejs do C) dostêp do wystêpuj±cego w wiêkszo¶ci systemów
+%description -l pl.UTF-8
+ModuÅ‚ Perla Unix::Syslog umoÅ¼liwia za poÅ›rednictwem XSUB Perla
+(perlowy interfejs do C) dostÄ™p do wystÄ™pujÄ…cego w wiÄ™kszoÅ›ci systemÃ³w
 uniksowych rejestratora systemowego.
 
 %prep
