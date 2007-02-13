@@ -6,7 +6,7 @@
 %define		pdir	Unix
 %define		pnam	Syslog
 Summary:	Unix::Syslog - Perl interface to the UNIX system logger
-Summary(pl.UTF-8):   Unix::Syslog - interfejs Perla do uniksowego systemowego programu logującego
+Summary(pl.UTF-8):	Unix::Syslog - interfejs Perla do uniksowego systemowego programu logującego
 Name:		perl-Unix-Syslog
 Version:	0.100
 Release:	1
